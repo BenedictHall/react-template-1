@@ -1,13 +1,12 @@
-function Profile() {
+function Profile(props) {
     return (
         <div id="profile">
-        <h1 id="name">Quackie Makers</h1>
+        <h1 id="name">{props.name}</h1>
 
-        <p id="job">Makers' favourite rubber duck</p>
-        <p id="birthdate">2013</p>
+        <p id="job">{props.job}</p>
+        <p id="birthdate">{props.birthday}</p>
         </div>
         );
 }
 
 export default Profile;
-
